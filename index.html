@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="card__search">
+      <input class="search-input" type="text" placeholder="Enter city name" spellcheck="false">
+      <button class="search-btn"><img src="img/search.png" alt="img"></button>
+    </div>
+    <div class="error">
+      <p>Invalid city name</p>
+    </div>
+    <div class="card__weather">
+      <img class="weather-icon" src="img/snow.png" alt="rain">
+      <h1 class="weather-temp">14°C</h1>
+      <h2 class="weather-city">Rivne</h2>
+      <div class="card__details">
+        <div class="details__col">
+          <img src="img/humidity.png" alt="">
+          <div class="">
+            <p class="col-humidity">50%</p>
+            <p>Humidity</p>
+          </div>
+        </div>
+        <div class="details__col">
+          <img src="img/wind.png" alt="">
+          <div class="">
+            <p class="col-wind">5 km/h</p>
+            <p>Wind speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+
+</body>
+
+</html>
