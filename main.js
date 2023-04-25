@@ -78,4 +78,13 @@ function checkWether(city) {
 searchBtn.addEventListener('click', () => {
   checkWether(searchInput.value)
   document.querySelector('.card__weather').style.display = 'block';
+  document.querySelector('.error').style.display = 'none'
+})
+
+searchInput.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    checkWether(searchInput.value)
+    document.querySelector('.card__weather').style.display = 'block';
+    document.querySelector('.error').style.display = 'none'
+  }
 })
